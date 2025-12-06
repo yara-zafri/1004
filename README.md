@@ -41,12 +41,14 @@ Health Meal Planner is a simple Single Page Application (SPA) that helps users m
 
 ```bash
 git clone https://github.com/yara-zafri/1004.git
+```
 
 2. Run the application
 
 Open the file:
 ```bash
 index.html
+```
 
 in any modern browser.
 No server setup is required.
@@ -85,6 +87,7 @@ The meal will load automatically into the app
     "id": 1764852223349
   }
 ]
+```
 
 🔮 Future Enhancements
 
