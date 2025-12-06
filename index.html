@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthMeal Planner — COMP1004 SPA</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      min-height: 90vh;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 { margin: 0 0 10px 0; }
+
+    input, select, button, textarea {
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button { cursor: pointer; background: green; color: white; border: none; }
+
+    button.secondary { background: #ddd; color: black; }
+
+    .meals { margin-top: 20px; }
+
+    .meal {
+      display: flex;
+      justify-content: space-between;
+      background: #fafafa;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      border: 1px solid #ececec;
+    }
+
+    .controls { display:flex; gap:10px; margin-bottom:10px; }
+
+    .form-popup {
+      display: none;
+      margin-top: 15px;
+      background: #f8f9ff;
+      border-left: 4px solid green;
+      padding: 12px;
+      border-radius: 6px;
+    }
+
+    .empty { text-align: center; padding: 20px; color: #777; }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <h1>Meal Planner</h1>
+  
+  <div class="controls">
+    <input id="search" placeholder="Search meals...">
+    <select id="filter">
+      <option value="all">All meals</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+    </select>
+
+    <button id="newMeal">+ Add Meal</button>
+    <button id="exportBtn">Export JSON</button>
+
+    <input type="file" id="importFile" style="display:none" accept="application/json">
+    <button id="importBtn" class="secondary">Import JSON</button>
+  </div>
+
+  <!-- Form -->
+  <div id="formArea" class="form-popup">
+    <h3 id="formTitle">Add Meal</h3>
+    <input id="mealName" placeholder="Meal name"><br><br>
+    <select id="mealType">
+      <option>Breakfast</option>
+      <option>Lunch</option>
+      <option>Dinner</option>
+    </select><br><br>
+    <input id="mealCalories" placeholder="Calories" type="number"><br><br>
+    <label><input type="checkbox" id="mealEaten"> Eaten</label><br><br>
+
+    <button id="saveMeal">Save</button>
+    <button id="cancelMeal" class="secondary">Cancel</button>
+  </div>
+
+  <!-- Meal list -->
+  <div id="mealList" class="meals"></div>
+  <div id="empty" class="empty" style="display:none">No meals found.</div>
+
+</div>
+</body>
+</html>
