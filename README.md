@@ -1,15 +1,15 @@
-# HabiTrack – Daily Habit & Routine Tracker
+# Health Meal Planner
 
-HabiTrack is a simple Single Page Application (SPA) that helps users track and manage their daily habits. The app is fully built with **HTML, CSS, and JavaScript**, and meets all the COMP1004 module requirements, including JSON import and export using flat files.
+Health Meal Planner is a simple Single Page Application (SPA) that helps users manage their daily meals. The app is fully built with **HTML, CSS, and JavaScript**, and meets all the COMP1004 module requirements, including JSON import and export using flat files.
 
 ---
 
 ## ✨ Features
 
-- Add, edit, and delete habits  
-- Mark habits as completed  
-- Export habits to a JSON file  
-- Import habits from a JSON file  
+- Add, edit, and delete meal  
+- Mark Meal as Eaten  
+- Export Meals to a JSON file  
+- Import Meals from a JSON file  
 - Fully interactive SPA  
 - Works completely offline (client-side only)
 
@@ -55,30 +55,34 @@ No server setup is required.
 
 Click Export Habits
 
-A file named habits.json will be downloaded
+A file named meals.json will be downloaded
 
-It contains all saved habits in JSON format
+It contains all saved meals in JSON format
 
-📥 Importing Habits (Load JSON)
+📥 Importing Meals (Load JSON)
 
-Click Import Habits
+Click Import Meals
 
 Select any valid JSON habits file
 
-The habits will load automatically into the app
+The meal will load automatically into the app
 
 📘 Example JSON File
 ```bash
 [
-  {
-    "name": "Drink Water",
-    "goal": "8 cups per day",
-    "completed": false
+ {
+    "id": 3,
+    "name": "Salmon with Rice",
+    "type": "Dinner",
+    "calories": 600,
+    "eaten": false
   },
   {
-    "name": "Study",
-    "goal": "1 hour of study",
-    "completed": true
+    "name": "Oatmeal with Fruits 2",
+    "type": "Breakfast",
+    "calories": 360,
+    "eaten": false,
+    "id": 1764852223349
   }
 ]
 
@@ -88,9 +92,9 @@ Dark / Light mode
 
 Weekly progress analytics
 
-Habit streak system
+Meal streak system
 
-Drag-and-drop habit sorting
+Drag-and-drop meal sorting
 
 Auto-save using Local Storage
 
