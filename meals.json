@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Oatmeal with Fruits",
+    "type": "Breakfast",
+    "calories": 350,
+    "eaten": true
+  },
+  {
+    "id": 2,
+    "name": "Grilled Chicken Salad",
+    "type": "Lunch",
+    "calories": 420,
+    "eaten": true
+  },
+  {
+    "id": 3,
+    "name": "Salmon with Rice",
+    "type": "Dinner",
+    "calories": 600,
+    "eaten": false
+  },
+  {
+    "name": "Oatmeal with Fruits 2",
+    "type": "Breakfast",
+    "calories": 360,
+    "eaten": false,
+    "id": 1764852223349
+  }
+]
