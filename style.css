@@ -1,0 +1,54 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      min-height: 90vh;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 { margin: 0 0 10px 0; }
+
+    input, select, button, textarea {
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button { cursor: pointer; background: green; color: white; border: none; }
+
+    button.secondary { background: #ddd; color: black; }
+
+    .meals { margin-top: 20px; }
+
+    .meal {
+      display: flex;
+      justify-content: space-between;
+      background: #fafafa;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      border: 1px solid #ececec;
+    }
+
+    .controls { display:flex; gap:10px; margin-bottom:10px; }
+
+    .form-popup {
+      display: none;
+      margin-top: 15px;
+      background: #f8f9ff;
+      border-left: 4px solid green;
+      padding: 12px;
+      border-radius: 6px;
+    }
+
+    .empty { text-align: center; padding: 20px; color: #777; }
